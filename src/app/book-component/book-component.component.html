@@ -1,12 +1,12 @@
-<div class="m-2 panel p-2 card">
-  <div class="">Name: {{book.name}}  </div>
-  <div>Date: {{book.date | date:'yyy, mm dd'}} </div>
-  <div>Author: {{book.author}} </div>
+<div class="card m-2" style="width:18rem">
+  <div class="card-body">
+    <div >Name: {{book.name}} </div>
+    <div >Date: {{book.date | date:'medium'}} </div>
+    <div >Author: {{book.author}} </div>
 
-  <div class=row>
-  <button class="btn btn-primary m-1" >Edit</button>
-  <button class="btn btn-secondary m-1">Delete</button>
+    <div class="row pt-2 pl-2">
+      <button class="btn btn-primary m-1" (click)="edit(book.id)">Edit</button>
+      <button class="btn btn-secondary m-1" (click)="delete(book.id)">Delete</button>
+    </div>
+  </div>
 </div>
-</div>
-
-

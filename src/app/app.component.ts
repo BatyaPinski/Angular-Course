@@ -20,8 +20,11 @@ export class AppComponent implements OnInit {
   }
 
   public edit(id:number)
-  {
-     let book = this.books.filter(x=> x.id === id)[0];
-     this.books.splice(book);
+  {  
+    this.booksSrv.edit(id);
+  }
+
+  public delete(id:number){
+   this.booksSrv.delete(id);
   }
 }

@@ -1,5 +1,5 @@
 <h1>Book Library</h1>
 
 <div *ngFor="let book of books" class="book-library">
-  <app-book-component [book]="book" (editEvent)="edit($event)"></app-book-component>
+  <app-book-component [book]="book" (editEvent)="edit($event)" (deleteEvent)="delete($event)"></app-book-component>
 </div>
