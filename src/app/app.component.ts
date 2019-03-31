@@ -8,23 +8,10 @@ import { BookService } from './services/book.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
- books:Array<Book>;
+  constructor() { }
 
- constructor(private booksSrv : BookService)
- {
-
- }
   ngOnInit()
   {
-  this.books = this.booksSrv.getAll();
   }
 
-  public edit(id:number)
-  {  
-    this.booksSrv.edit(id);
-  }
-
-  public delete(id:number){
-   this.booksSrv.delete(id);
-  }
 }

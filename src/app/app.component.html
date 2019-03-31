@@ -1,5 +1,21 @@
-<h1>Book Library</h1>
+<div >
+  <div >
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/library">Library</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/edit">Add</a>
+          </li>
+    </ul>
+  </div>
+  <div class="card-body">
+<router-outlet></router-outlet>
+  
+  </div>
 
-<div *ngFor="let book of books" class="book-library">
-  <app-book-component [book]="book" (editEvent)="edit($event)" (deleteEvent)="delete($event)"></app-book-component>
 </div>
+

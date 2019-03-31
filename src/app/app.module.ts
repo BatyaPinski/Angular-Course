@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookComponentComponent } from './book-component/book-component.component';
 import { BookService } from './services/book.service';
+import { HomeComponent } from './home/home.component';
+import { LibraryComponent } from './library/library.component';
+import { EditComponentComponent } from './edit-component/edit-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponentComponent
+    BookComponentComponent,
+    HomeComponent,
+    LibraryComponent,
+    EditComponentComponent
   ],
   imports: [
     BrowserModule,
