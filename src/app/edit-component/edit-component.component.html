@@ -1,3 +1,18 @@
-<p>
-  edit-component works!
-</p>
+<div class="justify-content-center" style="width:400px">
+  <div class="form-group ">
+    <label for="name">Name</label>
+    <input type="text" autocomplete="off" placeholder="Enter Name" [(ngModel)]="book.name" id="name"
+      class="form-control">
+  </div>
+
+  <div class="form-group ">
+    <label for="author">Author</label>
+    <input type="text" autocomplete="off" placeholder="Enter Author" [(ngModel)]="book.author" id="author"
+      class="form-control">
+  </div>
+
+  <div class="form-control">
+    <label for="dateElemnt">Date</label>
+    <input type="date" placeholder="Select Date" [(ngModel)]="book.date" id="dateElemnt" class="form-control">
+  </div>
+</div>
