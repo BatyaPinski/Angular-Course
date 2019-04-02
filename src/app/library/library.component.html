@@ -1,8 +1,10 @@
-<div>
+<div clas>
 
   <h1 class="text-center">Book Library</h1>
 
-  <div *ngFor="let book of books" class="book-library">
+  <div  class="d-flex flex-wrap">
+  <div *ngFor="let book of books">
     <app-book-component [book]="book" (editEvent)="edit($event)" (deleteEvent)="delete($event)"></app-book-component>
   </div>
+</div>
 </div>
